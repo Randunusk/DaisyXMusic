@@ -457,7 +457,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **ක්‍රියා කරමින්**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -489,7 +489,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "I joined this group for playing music in VC"
+                        message.chat.id, "මම මෙම Chat එකේ Voice Chat එක තුළ සිංදු වාදනය සදහා සම්බන්ධ උනෙමි."
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -512,7 +512,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("🔎 **Finding**")
+    await lel.edit("🔎 **සොයනවා**")
     if message.reply_to_message:
         entities = []
         toxt = message.reply_to_message.text or message.reply_to_message.caption
@@ -565,7 +565,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **ක්‍රියා කරමින්**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -609,7 +609,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **ක්‍රියා කරමින්**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         
         try:
@@ -618,7 +618,7 @@ async def play(_, message: Message):
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
-            toxxt = "**Select the song you want to play**\n\n"
+            toxxt = "**ඔබට වාදනය කිරීමට අවශ්‍ය ගීතය තෝරන්න**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
