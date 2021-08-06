@@ -63,7 +63,7 @@ def cb_admin_check(func: Callable) -> Callable:
         if cb.from_user.id in admemes:
             return await func(client, cb)
         else:
-            await cb.answer("You ain't allowed!", show_alert=True)
+            await cb.answer("ඔබට අවසර නැත!", show_alert=True)
             return
 
     return decorator
@@ -146,9 +146,9 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "**Now Playing** in {}".format(message.chat.title)
+    msg = "**වාදනය වෙමින් පවතින්නෙ** in {}".format(message.chat.title)
     msg += "\n- " + now_playing
-    msg += "\n- Req by " + by
+    msg += "\n- ඉල්ලුවේ " + by
     temp.pop(0)
     if temp:
         msg += "\n\n"
@@ -172,8 +172,8 @@ def updated_stats(chat, queue, vol=100):
             stats += "\n\n"
             stats += "Volume : {}%\n".format(vol)
             stats += "Songs in queue : `{}`\n".format(len(que))
-            stats += "Now Playing : **{}**\n".format(queue[0][0])
-            stats += "Requested by : {}".format(queue[0][1].mention)
+            stats += "වාදනය වෙමින් පවතින්නෙ : **{}**\n".format(queue[0][0])
+            stats += "ඉල්ලුවේ : {}".format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -295,9 +295,9 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Now Playing** in {}".format(cb.message.chat.title)
+        msg = "**වාදනය වෙමින් පවතින්නෙ** in {}".format(cb.message.chat.title)
         msg += "\n- " + now_playing
-        msg += "\n- Req by " + by
+        msg += "\n- ඉල්ලුවෙ " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
@@ -363,9 +363,9 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Now Playing** in {}".format(cb.message.chat.title)
+        msg = "**වාදනය වෙමින් පවතින්නෙ** in {}".format(cb.message.chat.title)
         msg += "\n- " + now_playing
-        msg += "\n- Req by " + by
+        msg += "\n- ඉල්ලුවෙ " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
