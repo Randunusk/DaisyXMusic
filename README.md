@@ -1,11 +1,11 @@
-<h1 align="centre">DAISYXMUSIC V5.5 🎵</h1> 
+<h1 align="centre">SK MUSIC BOT V0.1 🎵</h1> 
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 #### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
-### Available on telegram as [@DaisyXbot](https://t.me/daisyxbot)
+### Available on `Telegram`u As [@skmusicplaybot](https://t.me/skmusicplaybot)
 
 <p align="center">
-  <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
+  <img src="https://telegra.ph/file/1c642e9823692c7fa2c4d.jpg">
 </p>
 
 <h2> Features 🔥 </h2>
@@ -112,20 +112,8 @@ Don't edit this part
 #### Special Credits
 - [Roj Serbest](http://github.com/rojserbest): Callsmusic Developer
 
-This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork daisyxmusic won't exist. 
-DaisyXmusic is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) for fit the needs of @DaisyXbot users
+This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork `skmusicplaybot` won't exist.
+`SK Music Play Bot` is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) for fit the needs of @skmusicplaybot users
 
-#### Contribtors
-- [InukaAsith](https://github.com/InukaAsith): Dev
-- [Technical-Hunter](https://github.com/Technical-Hunter): Dev
-- [Roj Serbest](http://github.com/rojserbest): Developer of callsmusic 
-- [Wrench](https://github.com/EverythingSuckz/): Dev
-- [Bemro](https://github.com/bemroofficial): Dev
-- [QueenArzoo](https://github.com/QueenArzoo): Dev
-- [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev
-- [AuraXNetwork](https://github.com/AuraXNetwork/AuraXMusicBot)
-- [Hamker Cat](https://github.com/thehamkercat/)
-- [Anjana-Ma](https://github.com/Anjana-Ma): 
-- [ImJanindu](https://github.com/ImJanindu): 
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
-- [Original Repo owners](https://github.com/suprojects/CallsMusic)
+#### Contribtor
+- [Sasmitha Kavija](https://t.me/Sasmithakr)
