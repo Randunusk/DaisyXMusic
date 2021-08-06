@@ -2,7 +2,7 @@
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 #### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
-### Available on `Telegram`u As [@skmusicplaybot](https://t.me/skmusicplaybot)
+### Available on `Telegram` As [@skmusicplaybot](https://t.me/skmusicplaybot)
 
 <p align="center">
   <img src="https://telegra.ph/file/1c642e9823692c7fa2c4d.jpg">
