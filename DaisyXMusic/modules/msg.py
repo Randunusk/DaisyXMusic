@@ -17,7 +17,7 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
+      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n🤖මම ටෙලිග්‍රෑම් කණ්ඩායම් සහ නාලිකා වල Voice Chat තුළ සංගීතය වාදනය කිරීම සඳහා නිර්මාණය කරන ලද උසස් Bot වරයෙකි.\n\n✅ Send me /help for more info.\n✅ උදවු සදහා /help ලෙස එවන්න."
       HELP_MSG = [
         ".",
 f"""
