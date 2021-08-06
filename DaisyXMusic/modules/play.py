@@ -625,23 +625,23 @@ async def play(_, message: Message):
 
             while j < 5:
                 toxxt += f"{emojilist[j]} **Title - [{results[j]['title']}](https://youtube.com{results[j]['url_suffix']})**\n"
-                toxxt += f" ╚ **Duration** - {results[j]['duration']}\n"
-                toxxt += f" ╚ **Views** - {results[j]['views']}\n"
-                toxxt += f" ╚ **Channel** - {results[j]['channel']}\n\n"
+                toxxt += f" ╚ **වේලාව** - {results[j]['duration']}\n"
+                toxxt += f" ╚ **නැරැඹුම් වාර** - {results[j]['views']}\n"
+                toxxt += f" ╚ **නාලිකාව** - {results[j]['channel']}\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("1️⃣", callback_data=f'plll 0|{query}|{user_id}'),
-                        InlineKeyboardButton("2️⃣", callback_data=f'plll 1|{query}|{user_id}'),
-                        InlineKeyboardButton("3️⃣", callback_data=f'plll 2|{query}|{user_id}'),
+                        InlineKeyboardButton("1️⃣ ගීතය", callback_data=f'plll 0|{query}|{user_id}'),
+                        InlineKeyboardButton("2️⃣ ගීතය", callback_data=f'plll 1|{query}|{user_id}'),
+                        InlineKeyboardButton("3️⃣ ගීතය", callback_data=f'plll 2|{query}|{user_id}'),
                     ],
                     [
-                        InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
-                        InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
+                        InlineKeyboardButton("4️⃣ ගීතය", callback_data=f'plll 3|{query}|{user_id}'),
+                        InlineKeyboardButton("5️⃣ ගීතය", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="Close 🛑", callback_data="cls")],
+                    [InlineKeyboardButton(text="අවශ්‍ය නැත 🛑", callback_data="cls")],
                 ]
             )       
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -733,7 +733,7 @@ async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **ක්‍රියා කරමින්**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -787,7 +787,7 @@ async def ytplay(_, message: Message):
             f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
         )
         return
-    await lel.edit("🔎 **Finding**")
+    await lel.edit("🔎 **සොයමින්**")
     user_id = message.from_user.id
     user_name = message.from_user.first_name
      
@@ -796,7 +796,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🎵 **Processing**")
+    await lel.edit("🎵 **ක්‍රියා කරමින්**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -880,7 +880,7 @@ async def deezer(client: Client, message_: Message):
     if message_.chat.id in DISABLED_GROUPS:
         return
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **ක්‍රියා කරමින්**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -1018,7 +1018,7 @@ async def jiosaavn(client: Client, message_: Message):
     global que
     if message_.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **ක්‍රියා කරමින්**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
